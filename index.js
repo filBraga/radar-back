@@ -137,6 +137,6 @@ mongoose
   )
   .then(() => {
     console.log("Conectou ao banco!");
-    app.listen(9000);
+    app.listen(process.env.PORT || 5000);
   })
   .catch((err) => console.log(err));
